@@ -3,7 +3,7 @@ import '../styles/Events.scss'
 
 const Events = () => {
   return (
-    <div>hi</div>
+    <div>events</div>
   )
 }
 

@@ -3,7 +3,7 @@ import '../styles/MyFriendsContainer.scss'
 
 const MyFriendsContainer = () => {
   return (
-    <div>hi</div>
+    <div>frinds</div>
   )
 }
 
