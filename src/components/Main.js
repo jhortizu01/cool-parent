@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/Main.scss'
 import AllProfilesContainer from './AllProfilesContainer'
 import Events from './Events'

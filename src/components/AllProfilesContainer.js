@@ -1,9 +1,15 @@
 import React from 'react'
 import '../styles/AllProfilesContainer.scss'
 
-const AllFriendsContainer = () => {
- return (
-    <div>all Friends container</div>
+const AllFriendsContainer = ({ allParents }) => {
+//  let parent = allParents.map(parent => {
+//   return (
+//     <div>{parent.name}</div>
+//  )
+//  })
+
+  return (
+    <div>parent</div>
  )
 }
 
