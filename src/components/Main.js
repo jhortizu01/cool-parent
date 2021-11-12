@@ -6,12 +6,14 @@ import NavBar from './NavBar'
 import MyFriendsContainer from './MyFriendsContainer'
 import { Route } from 'react-router-dom'
 
-const Main = () => {
+const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
+  const [allFriendsState, setAllFriends] = useState([])
+
   return (
     <div className="main">
-      <Route exact path='/' render={ () => <AllProfilesContainer /> }/> 
-      <Route exact path='/events' render={() => <Events />} />
-      <Route exact path='/my-friends' render={() => <MyFriendsContainer />} />
+      <Route exact path='/' render={ () => <AllProfilesContainer allParents={allParents} setParentState={setParentState} allFriendsState={allFriendsState} setAllFriends={setAllFriends} />} /> 
+      <Route exact path='/events' render={() => <Events allEvents={allEvents} setEventState={setEventState}/>} />
+      <Route exact path='/my-friends' render={() => <MyFriendsContainer allFriendsState={allFriendsState} />} />
     </div>
   )
 }
