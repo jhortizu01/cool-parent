@@ -1,0 +1,59 @@
+@import 'variables';
+
+.profile-card {
+  background-color: $main-title;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border: #7FD1B9 solid 5px;
+  width: 65%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.profile-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: #E56399 solid 5px;
+  margin-left: 15px;
+}
+
+.fistbump {
+  width: 200px;
+  height: auto;
+  margin-left: 25px;
+
+}
+
+.img-container {
+  height: 175px;
+  width: auto;
+}
+
+.card-imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.description {
+  margin-left: 30px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.name {
+  font-family: $secondary-font;
+  font-size: 45px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: $primary-font;
+  margin-top: 0px;
+}
