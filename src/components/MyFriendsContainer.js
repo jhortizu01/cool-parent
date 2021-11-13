@@ -8,9 +8,8 @@ const MyFriendsContainer = ({ allFriendsState, allParents, setParentState, setAl
   })
  
   const deleteFriend = (id) => {
-    console.log(id);
-    const bestFriends = findParent.filter(parent => parent.id != id);
-    setParentState([...allParents, bestFriends]);
+    findParent.filter(parent => parent.id != id);
+    setParentState([...allParents])
   }
 
     const parent = findParent.map(parent => {

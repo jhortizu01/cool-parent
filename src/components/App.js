@@ -15,8 +15,6 @@ function App() {
   }
 
   const parseData = (data) => {
-    console.log(data)
-
     setParentState(data[0].parentData)
     setEventState(data[1].eventData)
   }
@@ -24,8 +22,6 @@ function App() {
   useEffect(() => {
     getData()
   }, [])
-
-
 
   return (
     <div className="App">
