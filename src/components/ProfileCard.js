@@ -10,7 +10,7 @@ const ProfileCard = ({ name, age, id, numberOfKids, occupation, activityKids, ac
    return friend === id
   })
 
-  const [areWeFriends, setAreWeFriends] = useState(false)
+  const [areWeFriends, setAreWeFriends] = useState(friends || false)
 
   const toggleFriends = (e) => {
     if(areWeFriends === false) {
