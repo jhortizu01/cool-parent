@@ -25,10 +25,12 @@ function App() {
     getData()
   }, [])
 
+
+
   return (
     <div className="App">
       <NavBar />
-      <Main allParents={allParents} allEvents={allEvents} setParentState={setParentState} setEventState={setEventState}/>
+      <Main allParents={allParents} allEvents={allEvents} setParentState={setParentState} setEventState={setEventState} />
     </div>
   );
 }
