@@ -9,11 +9,13 @@ import { Route } from 'react-router-dom'
 const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
   const [allFriendsState, setAllFriends] = useState([])
 
+
+
   return (
     <div className="main">
       <Route exact path='/' render={ () => <AllProfilesContainer allParents={allParents} setParentState={setParentState} allFriendsState={allFriendsState} setAllFriends={setAllFriends} />} /> 
       <Route exact path='/events' render={() => <Events allEvents={allEvents} setEventState={setEventState}/>} />
-      <Route exact path='/my-friends' render={() => <MyFriendsContainer allFriendsState={allFriendsState} />} />
+      <Route exact path='/my-friends' render={() => <MyFriendsContainer allFriendsState={allFriendsState} allParents={allParents} setParentState={setParentState} setAllFriends={setAllFriends}  />} />
     </div>
   )
 }
