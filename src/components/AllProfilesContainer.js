@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Redirect } from 'react'
 import '../styles/AllProfilesContainer.scss'
 import ProfileCard from './ProfileCard'
 
-const AllFriendsContainer = ({ allParents, allFriendsState, setAllFriends, deleteFriend}) => {
+const AllFriendsContainer = ({ allParents, allFriendsState, setAllFriends, error}) => {
 
   const parent = allParents.map(parent => {
       return (
@@ -19,14 +19,14 @@ const AllFriendsContainer = ({ allParents, allFriendsState, setAllFriends, delet
         img={parent.img}
         allFriendsState={allFriendsState}
         setAllFriends={setAllFriends}
-        deleteFriend={deleteFriend}
         />
       )
   })
 
+  const errorHandling = error ? <Redirect to='/error' /> : parent
 
   return (
-    <div className="parent-container">{parent}</div>
+    <div className="parent-container">{errorHandling}</div>
  )
 }
 

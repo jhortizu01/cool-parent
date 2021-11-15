@@ -1,0 +1,25 @@
+@mixin nav700 {
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 30%;
+  }
+}
+
+@mixin buttons700 {
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    margin-left: 25px;
+    justify-content: left;;
+  }
+}
+
+@mixin title2-700 {
+  @media screen and (max-width: 700px) {
+      font-size: 100px;
+  }
+}
+

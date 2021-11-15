@@ -32,10 +32,10 @@ const MyFriendsContainer = ({ allFriendsState, allParents, setParentState, setAl
       )
     })
   
-    let noFriends = <div>go make some friends</div>
+    let noFriends = <div className="no-friends">You dont have any friends yet. Go make some friends!</div>
 
   return (
-    <div>{findParent.length > 0 ? parent : noFriends}</div>
+    <div className="parent-container">{findParent.length > 0 ? parent : noFriends}</div>
   )
 }
  

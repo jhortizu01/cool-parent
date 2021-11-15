@@ -1,12 +1,14 @@
 @import 'variables';
+@import 'mediaquery1050';
 
 .event-card {
-  width: 100%;
+  width: 95%;
   height: auto;
-  background-color: #ECE2D0;
+  background-color: $cream;
   border-radius: $rounded-corners;
   border: $green-border;
   margin: 15px;
+  @include event-card1050();
 }
 
 .details-container {
@@ -26,3 +28,4 @@
   margin-bottom: 0px;
   text-align: center;
 }
+

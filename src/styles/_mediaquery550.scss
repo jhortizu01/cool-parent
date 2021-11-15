@@ -1,0 +1,55 @@
+@mixin button550 {
+  @media screen and (max-width: 550px) {
+    margin-right: 5px; 
+    height: 30px;
+    width: 75px;
+    font-size: 15px;
+  }
+}
+
+@mixin title2-550 {
+  @media screen and (max-width: 550px) {
+    font-size: 75px;
+    margin-left: 0px;
+  }
+}
+
+@mixin title1-550 {
+  @media screen and (max-width: 550px) {
+    margin-left: 0px;
+  }
+}
+
+@mixin main-title550 {
+  @media screen and (max-width: 550px) {
+    text-align: center;
+  }
+}
+
+@mixin nav550 {
+  @media screen and (max-width: 550px) {
+    align-items: center;
+    height: 25%;
+  }
+}
+
+@mixin event-container550 {
+  @media screen and (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@mixin event-form-container550 {
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
+}
+
+@mixin form550 {
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
+}
+

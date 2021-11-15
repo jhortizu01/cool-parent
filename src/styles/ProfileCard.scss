@@ -1,49 +1,50 @@
 @import 'variables';
+@import 'mixins';
+@import 'mediaquery640';
+@import 'mediaquery350';
 
 .profile-card {
   background-color: $main-title;
-  display: flex;
-  align-items: center;
   border-radius: $rounded-corners;
-  border: #7FD1B9 solid 5px;
-  width: 65%;
+  border: $green-border;
+  width: min-content;
   height: auto;
   margin-top: 40px;
+  @include flex-align-center();
+  @include profile-card640();
 }
 
 .profile-img {
-  height: 250px;
-  width: 250px;
   border-radius: 50%;
-  border: #E56399 solid 5px;
+  border: $pink-border;
   margin-left: 15px;
+  @include square(250px);
+  @include profile-img640();
+  @include profile-img350();
 }
 
 .fistbump {
   width: 200px;
   height: auto;
-  margin-left: 25px;
-
+  padding: 0px;
 }
 
 .img-container {
-  height: 175px;
-  width: auto;
+  @include square(auto);
 }
 
 .card-imgs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-  margin-left: 25px;
+  @include flex-align-center-column();
+  margin: 25px;
+  @include card-imgs640();
 }
 
 .description {
   margin-left: 30px;
   margin-right: 15px;
   margin-top: 15px;
+  width: 250px;
+  @include description640();
 }
 
 .name {
@@ -57,3 +58,26 @@ p {
   font-family: $primary-font;
   margin-top: 0px;
 }
+
+.open {
+  margin-top: 30px;
+  height: 50px;
+  width: auto;
+  @include open640(); 
+}
+
+.close {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 50px;
+  width: auto;
+  padding: 0px;
+}
+
+.hide-button-style {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+

@@ -1,0 +1,27 @@
+@mixin square($length) {
+  height: $length;
+  width: $length;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-align-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-colum-justify-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

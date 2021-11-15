@@ -1,13 +1,25 @@
+@import "variables";
+@import "mediaquery550";
+
 .event-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  height: max-content;
+  background-color: $mauve;
+ @include event-container550();
 }
 
 .event-card-container {
-  width: 55%;
+  width: 75%;
+  height: 475px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .event-form-container {
-  width: 40%
+  width: 40%;
+  @include event-form-container550();
 }
+
+
+

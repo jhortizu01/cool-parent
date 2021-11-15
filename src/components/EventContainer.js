@@ -13,7 +13,7 @@ const EventContainer = ({ allEvents, setEventState}) => {
       description={event.description}
       host={event.host}
     />
-  })
+  }).reverse()
   
   return (
     <div className="event-container">

@@ -1,0 +1,41 @@
+@mixin profile-card640 {
+  @media screen and (max-width: 700px) {
+    @include flex-align-center-column;
+    width: 75%;
+    height: auto;
+  }
+}
+
+@mixin card-imgs640 {
+  @media screen and (max-width: 640px) {
+      margin: 0px;
+  }
+}
+
+@mixin description640 {
+  @media screen and (max-width: 640px) {
+      margin-top: 0px;
+  }
+}
+
+@mixin profile-img640 {
+  @media screen and (max-width: 640px) {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+}
+
+@mixin label-640 {
+  @media screen and (max-width: 640px) {
+    font-size: 30px;
+  }
+}
+
+@mixin open640 {
+  @media screen and (max-width: 640px) {
+      transform: rotate(0.25turn);
+  }
+}
+
+
+

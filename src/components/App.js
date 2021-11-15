@@ -4,14 +4,17 @@ import Main from './Main'
 import NavBar from './NavBar'
 import { Route } from 'react-router-dom'
 import { fetchParentData, fetchEventData } from './apiCalls'
+import Error from './Error'
 
 function App() {
   const [allParents, setParentState] = useState([])
   const [allEvents, setEventState] = useState([])
+  const [errorState, setErrorState] = useState(false)
   
   const getData = () => {
     Promise.all([fetchParentData(), fetchEventData()])
       .then(data => parseData(data))
+      .catch(error => setErrorState(true))
   }
 
   const parseData = (data) => {
@@ -23,10 +26,14 @@ function App() {
     getData()
   }, [])
 
+  const errorHandling = errorState ? 
+  <Error /> : 
+  <Main allParents={allParents} allEvents={allEvents} setParentState={setParentState} setEventState={setEventState} errorState={errorState}/>
+
   return (
     <div className="App">
       <NavBar />
-      <Main allParents={allParents} allEvents={allEvents} setParentState={setParentState} setEventState={setEventState} />
+      {errorHandling}
     </div>
   );
 }
