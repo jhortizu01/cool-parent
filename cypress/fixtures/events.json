@@ -1,0 +1,20 @@
+{
+  "eventData": [
+    {
+      "what": "Mom's night out",
+      "when": "2022-03-01",
+      "time": "5:00 pm",
+      "where": "Death & Co Denver",
+      "description": "Leave the little people at home! Join us for a fun ladies night out downtown at Death & co Denver! Dress to impress",
+      "host": "Janika"
+    },
+    {
+      "what": "Abby's first birthday!",
+      "when": "2022-02-22",
+      "time": "12:00 pm",
+      "where": "Amanda's house",
+      "description": "It's Abby's first bday! Come join us for a baby shark themed bash. Presents appreciated!",
+      "host": "Amanda"
+    }
+  ]
+}

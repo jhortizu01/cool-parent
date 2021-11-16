@@ -6,7 +6,7 @@ const MyFriendsContainer = ({ allFriendsState, allParents, setParentState, setAl
   let findParent = allParents.filter(parent => {
     return allFriendsState.includes(parent.id)
   })
- 
+
   const deleteFriend = (id) => {
     findParent.filter(parent => parent.id != id);
     setParentState([...allParents])
@@ -35,7 +35,7 @@ const MyFriendsContainer = ({ allFriendsState, allParents, setParentState, setAl
     let noFriends = <div className="no-friends">You dont have any friends yet. Go make some friends!</div>
 
   return (
-    <div className="parent-container">{findParent.length > 0 ? parent : noFriends}</div>
+    <div className="friend-container">{findParent.length > 0 ? parent : noFriends}</div>
   )
 }
  

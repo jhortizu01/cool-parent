@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import friends from '../assets/friends-bump.png'
-import notFriends from '../assets/not-friends.png'
 
 
-const FriendCards = ({ name, age, id, occupation, activityKids, activityNoKids, aboutMe, img, allFriendsState, deleteFriend}) => {
-  
+const FriendCards = ({ name, age, id, numberOfKids, occupation, activityKids, activityNoKids, aboutMe, img, allFriendsState, setAllFriends, friendParents, setFriendParents, deleteFriend}) => {
+
   const [friendStatus, setFriendStatus] = useState(true)
   
   const removeFriend = (e) => {

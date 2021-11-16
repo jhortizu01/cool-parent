@@ -1,0 +1,62 @@
+
+{ "parentData": [
+  {  
+  "id": "1",
+  "name": "Laura Lee Long Makelky",
+  "age": 40,
+  "numberOfKids": [
+    "4 year old",
+    "7 year old"
+  ],
+  "occupation": "SAHM",
+  "activityKids": "Baking",
+  "activityNoKids": "Drinking",
+  "aboutMe": "I’m a Doctor Who nerd who loves most fantasy and science fiction. My dude and I have been together almost 11 years, married for 9-3/4. I miss traveling to Mexico on family vacations but hopefully we will be planning a trip soon. I grew up on a cattle ranch and still love cows, both as pets and food.",
+  "img": "https://i.ibb.co/MV1Hkzv/laura.jpg"
+},
+{
+  "id": "2",
+  "name": "Veronica Campbell",
+  "numberOfKids": [
+    "5 year old",
+    "6 year old",
+    "7 year old",
+    "7 year old"
+  ],
+  "age": 29,
+  "occupation": "dental hygienist",
+  "activityKids": "puzzles and painting",
+  "activityNoKids": "everything else",
+  "aboutMe": "I can read and I can cry",
+  "img": "https://i.ibb.co/Cz7x7RN/veronica.jpg"
+},
+{
+  "id": "3",
+  "name": "Erikka Folgers",
+  "age": 31,
+  "numberOfKids": [
+    "2 year old"
+  ],
+  "occupation": "Insurance Agent",
+  "activityKids": "Water park",
+  "activityNoKids": "Drinking and sleeping",
+  "aboutMe": "I have a spice for life. My son is everything. Live laugh love is overrated",
+  "img": "https://i.ibb.co/k0fLyDB/erika.jpg"
+},
+{
+  "id": "4",
+  "name": "Sarah Starr",
+  "age": 42,
+  "occupation": "health coach",
+  "numberOfKids": [
+    "15 year old",
+    "16 year old",
+    "18 year old"
+  ],
+  "activitesKids": "take them out to the dry lake bed in the desert and let them drive around like crazy stunt drivers.",
+  "activityNoKids": "drunk roller skate with my friends in downtown lv.",
+  "aboutMe": "polyamorous, queer, kinky entrepreneur who loves to knit hats for friends, throw naked pool parties, cook healthy meals with friends, geek out over investing and living abundantly, fall in love with myself by signing karaoke for strangers, and spend time having mental breakthroughs with my Burning Man community.",
+  "img": "https://i.ibb.co/rZFt1Np/sarah.jpg"
+}
+  ]
+}

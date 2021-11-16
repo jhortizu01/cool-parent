@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../styles/EventForm.scss'
 
-const EventForm = ({ allEvents, setEventState}) => {
+const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
   const [newWhen, setNewWhen] = useState("")
   const [newWhere, setNewWhere] = useState("")
   const [newWhat, setNewWhat] = useState("")
@@ -60,6 +60,13 @@ const EventForm = ({ allEvents, setEventState}) => {
 
   const submitNewEvent = (e) => {
     e.preventDefault()
+
+    if(newWhen === "" || newWhere === "" || newWhat === "" || newTime === "" || newDescription === "" || newHost === "") {
+      setMissingFields(true)
+    } 
+    
+    else {
+    setMissingFields(false)  
     setEventState([...allEvents, submitEvent])
     clearState()
 
@@ -71,6 +78,7 @@ const EventForm = ({ allEvents, setEventState}) => {
       }
     }).then(response => response.json())
       .catch(err => console.log('UNICORN ERR', err));
+    }
   }
 
   return (
@@ -103,6 +111,7 @@ const EventForm = ({ allEvents, setEventState}) => {
           name='when'
           value={newWhen}
           onChange={e => handleWhenChange(e)}
+
         />
         <input
           type='text'

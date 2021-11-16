@@ -42,8 +42,8 @@ const ProfileCard = ({ name, age, id, occupation, activityKids, activityNoKids, 
     <input type="image" className="close" src={close} onClick={e => hideDetails(e)}/>
 
   const toggleImage = areWeFriends ? 
-    <input type="image" id={id} onClick={e => toggleFriends(e)} className='fistbump' src={yesFriends} alt='fist bump' /> : 
-    <input type="image" id={id} onClick={e => toggleFriends(e)} className='fistbump' src={notFriends} alt='two fists before fist bump' />
+    <input type="image" id={id} onClick={e => toggleFriends(e)} className='fistbump'  src={yesFriends} alt='fist bump' /> : 
+    <input type="image" id={id} onClick={e => toggleFriends(e)} className='fistbump'  src={notFriends} alt='two fists before fist bump' />
 
   const details = showInfo ?       
     <section className="description">
@@ -69,7 +69,7 @@ const ProfileCard = ({ name, age, id, occupation, activityKids, activityNoKids, 
         <img className="profile-img" src={img} alt={`picture of ${name}`} />
         {hideOpenButton}
         <div className='img-container'>
-          {toggleImage}
+        {toggleImage}
         </div>
       </section>
       {details}

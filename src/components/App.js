@@ -2,7 +2,6 @@ import React, { useState, useEffect} from 'react'
 import '../styles/App.scss' 
 import Main from './Main'
 import NavBar from './NavBar'
-import { Route } from 'react-router-dom'
 import { fetchParentData, fetchEventData } from './apiCalls'
 import Error from './Error'
 

@@ -6,7 +6,14 @@
   flex-direction: row;
   height: max-content;
   background-color: $mauve;
- @include event-container550();
+  @include event-container550();
+}
+
+.missing-fields {
+  font-family: $secondary-font;
+  color: $pink;
+  text-align: center;
+  font-size: 25px;
 }
 
 .event-card-container {

@@ -1,5 +1,5 @@
 export const fetchParentData = () => {
-  return fetch('http://localhost:8080/api/v1/parents/parentData')
+  return fetch('http://localhost:8080/api/v1/parents/parentData/')
     .then(response => response.json())
     .catch(err => console.log(err))
 }

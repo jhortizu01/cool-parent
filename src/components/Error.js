@@ -3,7 +3,7 @@ import '../styles/Error.scss'
 
 const Error = () => {
   return (
-    <div>Sorry, the toddler is having a tantrum. Please come back later... with coffee.</div>
+    <div class="error-message">404: Sanity not found. Please come back later... with coffee.</div>
   )
 }
 
