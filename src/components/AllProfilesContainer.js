@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/AllProfilesContainer.scss'
 import ProfileCard from './ProfileCard'
+import PropTypes from 'prop-types';
 
 const AllFriendsContainer = ({ allParents, allFriendsState, setAllFriends}) => {
 
@@ -29,3 +30,9 @@ const AllFriendsContainer = ({ allParents, allFriendsState, setAllFriends}) => {
 }
 
 export default AllFriendsContainer
+
+AllFriendsContainer.propTypes = {
+  allParents: PropTypes.arrayOf(PropTypes.object),
+  allEvents: PropTypes.arrayOf(PropTypes.object),
+  setParentState: PropTypes.func,
+};

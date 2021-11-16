@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../styles/EventContainer.scss'
 import EventCard from './EventCard'
 import EventForm from './EventForm'
+import PropTypes from 'prop-types'
 
 const EventContainer = ({ allEvents, setEventState}) => {
   const [missingField, setMissingFields] = useState(false)
@@ -33,3 +34,8 @@ const EventContainer = ({ allEvents, setEventState}) => {
 }
 
 export default EventContainer
+
+EventContainer.propTypes = {
+  allEvents: PropTypes.arrayOf(PropTypes.object),
+  setEventState: PropTypes.func
+};

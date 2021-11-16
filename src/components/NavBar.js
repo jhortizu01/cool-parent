@@ -11,9 +11,9 @@ const NavBar = () => {
         <p className="title2">Cool Parent</p>
       </div>
       <div className="buttons">
-        <Link to='/'><button class="button">Home</button></Link>
-        <Link to='/events'><button class="button">Events</button></Link>
-        <Link to='/my-friends'><button class="button">Friends</button></Link>  
+        <Link to='/'><button className="button">Home</button></Link>
+        <Link to='/events'><button className="button">Events</button></Link>
+        <Link to='/my-friends'><button className="button">Friends</button></Link>  
       </div>
     </nav>
   )

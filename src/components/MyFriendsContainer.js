@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../styles/MyFriendsContainer.scss'
 import FriendCards from '../components/FriendCards'
+import PropTypes from 'prop-types';
 
 const MyFriendsContainer = ({ allFriendsState, allParents, setParentState, setAllFriends}) => {
   let findParent = allParents.filter(parent => {
@@ -8,7 +9,7 @@ const MyFriendsContainer = ({ allFriendsState, allParents, setParentState, setAl
   })
 
   const deleteFriend = (id) => {
-    findParent.filter(parent => parent.id != id);
+    findParent.filter(parent => parent.id !== id);
     setParentState([...allParents])
   }
 
@@ -39,6 +40,11 @@ const MyFriendsContainer = ({ allFriendsState, allParents, setParentState, setAl
   )
 }
  
-
-
 export default MyFriendsContainer
+
+MyFriendsContainer.propTypes = {
+  allParents: PropTypes.arrayOf(PropTypes.object),
+  allFriendsState: PropTypes.arrayOf(PropTypes.object),
+  setParentState: PropTypes.func,
+  setAllFriends: PropTypes.func
+}
