@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mediaquery1050';
+
+.event-card {
+  width: 95%;
+  height: auto;
+  background-color: $cream;
+  border-radius: $rounded-corners;
+  border: $green-border;
+  margin: 15px;
+  @include event-card1050();
+}
+
+.details-container {
+  margin-left: 15px;
+}
+
+.host {
+  font-family: $secondary-font;
+  font-size: 40px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.what {
+  font-family: $secondary-font;
+  font-size: 40px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+

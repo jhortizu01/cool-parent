@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+@import "mediaquery640";
+@import "mediaquery550";
+
+label {
+  font-family: $secondary-font;
+  font-size: 50px;
+  color: $green;
+  margin-top: 15px;
+  @include label-640();
+}
+
+form {
+  @include flex-align-center-column();
+  width: 95%;
+  @include form550(); 
+}
+
+input {
+  width: 90%;
+  height: 35px;
+  margin: 5px;
+  border-radius: $rounded-corners;
+  border: none;
+  padding-left: 15px;
+}
+
+.submit {
+  margin-top: 5px;
+  width: 90%;
+  border: none;
+  height: 35px;
+  font-family: $secondary-font;
+  font-size: 30px;
+  color: $pink;
+  background-color: $cream;
+  border-radius: $rounded-corners;
+}
+

@@ -1,0 +1,32 @@
+@import "variables";
+@import "mediaquery550";
+
+.event-container {
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  background-color: $mauve;
+  @include event-container550();
+}
+
+.missing-fields {
+  font-family: $secondary-font;
+  color: $pink;
+  text-align: center;
+  font-size: 25px;
+}
+
+.event-card-container {
+  width: 75%;
+  height: 475px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.event-form-container {
+  width: 40%;
+  @include event-form-container550();
+}
+
+
+

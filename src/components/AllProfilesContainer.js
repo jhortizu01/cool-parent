@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/AllProfilesContainer.scss'
 import ProfileCard from './ProfileCard'
 
-const AllFriendsContainer = ({ allParents, allFriendsState, setAllFriends, deleteFriend}) => {
+const AllFriendsContainer = ({ allParents, allFriendsState, setAllFriends}) => {
 
   const parent = allParents.map(parent => {
       return (
@@ -19,11 +19,9 @@ const AllFriendsContainer = ({ allParents, allFriendsState, setAllFriends, delet
         img={parent.img}
         allFriendsState={allFriendsState}
         setAllFriends={setAllFriends}
-        deleteFriend={deleteFriend}
         />
       )
   })
-
 
   return (
     <div className="parent-container">{parent}</div>

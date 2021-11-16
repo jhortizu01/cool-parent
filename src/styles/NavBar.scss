@@ -1,17 +1,23 @@
 @import 'variables';
+@import 'mixins';
+@import 'mediaquery1050';
+@import 'mediaquery700';
+@import 'mediaquery550';
 
 nav {
   margin: 0px;
   background-color: #7FD1B9;
   height: 25%;
-  border-bottom: solid 10px #E56399;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  border-bottom: solid 10px $pink;
+  @include flex-row-between();
+  @include nav700();
+  @include nav550();
 }
 
 .main-title {
   margin: 0px;
+  height: max-content;
+  @include main-title550();
 }
 
 .title1 {
@@ -21,6 +27,7 @@ nav {
   padding-top: 15px;
   font-family: $primary-font;
   color: $main-title;
+  @include title1-550();
 }
 
 .title2 {
@@ -30,54 +37,28 @@ nav {
   font-family: $secondary-font;
   font-size: 125px;
   color: $main-title;
-}
-
-.buttons {
-  margin-right: 25px;  
+  @include title2-700();
+  @include title2-550();
 }
 
 .button {
-  margin-left: 15px;
-  vertical-align: bottom;
-  // display: inline-block;
-  padding: .75rem 1.25rem;
-  border-radius: 10rem;
-  color: #7A6563;
-  //text-transform: uppercase;
-  font-size: 1rem;
-  //letter-spacing: .15rem;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  border: #E56399;
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ECE2D0;
-    border-radius: 10rem;
-    z-index: -2;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color:#E56399;
-    transition: all .3s;
-    border-radius: 10rem;
-    z-index: -1;
-  }
-  &:hover {
-    color: #7A6563;
-    &:before {
-      width: 100%;
-    }
-  }
+  margin-right: 25px; 
+  border: $mauve solid 5px;
+  border-radius: $rounded-corners;
+  height: 50px;
+  width: 150px;
+  font-family: $secondary-font;
+  font-size: 35px;
+  background-color: $cream;
+  color: $mauve;
+  @include button1050();
+  @include button550();
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 35px;
+  @include buttons1050();
+  @include buttons700();
 }

@@ -1,5 +1,6 @@
-.main {
-  background-color: #7A6563;
-  height: 100%;
+@import "variables";
 
+.main {
+  background-color: $mauve;
+  height: max-content;
 }
