@@ -1,13 +1,13 @@
 describe('Home page flows', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:8080/api/v1/parents/parentData', { fixture: "parents.json" })
+    cy.intercept('GET', 'https://cool-parent-api.herokuapp.com/api/v1/parents/parentData/', { fixture: "parents.json" })
       .as('parentData')
-    cy.intercept('GET', 'http://localhost:8080/api/v1/parents/eventData', { fixture: "events.json" })
+    cy.intercept('GET', 'https://cool-parent-api.herokuapp.com/api/v1/parents/eventData/', { fixture: "events.json" })
       .as('eventData')
-    cy.visit('http://localhost:3000')
+    cy.visit('https://cool-parent.herokuapp.com/')
   })
 
-  it('Should be able to visit http://localhost:3000', () => {
+  it('Should be able to visit https://cool-parent.herokuapp.com/', () => {
     cy.url()
       .should('include', '/')
   })

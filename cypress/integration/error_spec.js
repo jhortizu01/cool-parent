@@ -1,10 +1,10 @@
 describe('Home page flows', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:8080/api/v1/parents/parentData', {  })
+    cy.intercept('GET', 'hhttps://cool-parent-api.herokuapp.com/api/v1/parents/parentData/', {  })
       .as('parentData')
-    cy.intercept('GET', 'http://localhost:8080/api/v1/parents/eventData', { })
+    cy.intercept('GET', 'https://cool-parent-api.herokuapp.com/api/v1/parents/eventData/', { })
       .as('eventData')
-    cy.visit('http://localhost:3000')
+    cy.visit('https://cool-parent.herokuapp.com/')
   })
 
   it('Should display an error if there is a 400 status code on home', () => {
