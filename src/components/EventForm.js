@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/EventForm.scss'
+import PropTypes from 'prop-types'
 
 const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
   const [newWhen, setNewWhen] = useState("")
@@ -133,3 +134,9 @@ const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
 }
 
 export default EventForm
+
+EventForm.propTypes = {
+  allEvents: PropTypes.arrayOf(PropTypes.object),
+  setEventState: PropTypes.func,
+  setMissingFields: PropTypes.func
+};

@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../styles/ProfileCard.scss'
 import notFriends from '../assets/not-friends.png'
 import yesFriends from '../assets/friends-bump.png'
 import close from '../assets/point-left.svg'
 import open from  '../assets/point-right.svg'
 import closeUp from '../assets/point-up.png'
-import openDown from '../assets/point-down.png'
+
 
 const ProfileCard = ({ name, age, id, occupation, activityKids, activityNoKids, aboutMe, img, allFriendsState, setAllFriends}) => {
   const friends = allFriendsState.find(friend => {
@@ -38,8 +38,8 @@ const ProfileCard = ({ name, age, id, occupation, activityKids, activityNoKids, 
   }
 
   const changeCloseArrow = window.screen.width <= 640 ?
-    <input type="image" className="close" src={closeUp} onClick={e => hideDetails(e)}/> :
-    <input type="image" className="close" src={close} onClick={e => hideDetails(e)}/>
+    <input type="image" alt="hide details icon" className="close" src={closeUp} onClick={e => hideDetails(e)}/> :
+    <input type="image" alt="hide details icon" className="close" src={close} onClick={e => hideDetails(e)}/>
 
   const toggleImage = areWeFriends ? 
     <input type="image" id={id} onClick={e => toggleFriends(e)} className='fistbump'  src={yesFriends} alt='fist bump' /> : 
@@ -61,12 +61,12 @@ const ProfileCard = ({ name, age, id, occupation, activityKids, activityNoKids, 
 
   const hideOpenButton = showInfo ?
     null :
-    <input type="image" className="open" src={open} onClick={e => showDetails(e)}/>
+    <input type="image" alt="open details icon" className="open" src={open} onClick={e => showDetails(e)}/>
 
   return (
     <div className="profile-card">
       <section className='card-imgs'>
-        <img className="profile-img" src={img} alt={`picture of ${name}`} />
+        <img className="profile-img" src={img} alt={name} />
         {hideOpenButton}
         <div className='img-container'>
         {toggleImage}

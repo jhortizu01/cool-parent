@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/EventCard.scss'
+import PropTypes from 'prop-types';
 
 const EventCard = ({ what, where, when, time, description, host }) => {
   return (
@@ -17,3 +18,12 @@ const EventCard = ({ what, where, when, time, description, host }) => {
 }
 
 export default EventCard
+
+EventCard.propTypes = {
+  what: PropTypes.string.isRequired,
+  where: PropTypes.string.isRequired,
+  when: PropTypes.string.isRequired,
+  time:PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  host: PropTypes.string.isRequired,
+};

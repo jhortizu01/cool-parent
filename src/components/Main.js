@@ -4,7 +4,7 @@ import AllProfilesContainer from './AllProfilesContainer'
 import EventContainer from './EventContainer'
 import MyFriendsContainer from './MyFriendsContainer'
 import { Route } from 'react-router-dom'
-import Error from './Error'
+import PropTypes from 'prop-types'
 
 const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
   const [allFriendsState, setAllFriends] = useState([])
@@ -19,3 +19,10 @@ const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
 }
 
 export default Main
+
+Main.propTypes = {
+  allParents: PropTypes.arrayOf(PropTypes.object),
+  allEvents: PropTypes.arrayOf(PropTypes.object),
+  setParentState: PropTypes.func,
+  setEventState: PropTypes.func
+}
