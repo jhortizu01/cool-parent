@@ -1,0 +1,61 @@
+.landingsec1top {
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  background-color: #F1F1F2;
+}
+
+.momdaughter {
+  width: 50%;
+  height: 100%;
+}
+
+.description-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.description {
+  width: 539px;
+  height: 305.03px;
+}
+
+.tagline {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 56px;
+  margin: 0px;
+  margin-bottom: 60px;
+}
+
+.tagline2 {
+  font-size: 20px;
+  font-family: 'ABeeZee', sans-serif;
+  margin-bottom: 60px;
+}
+
+.friends-btn {
+  background-color: #71CEAC;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 250px;
+  height: 60px;
+  font-size: 18px;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.friends-btn:hover {
+  background-color: #E56399;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 250px;
+  height: 60px;
+  font-size: 18px;
+  font-family: 'ABeeZee', sans-serif;
+  cursor: pointer;
+}

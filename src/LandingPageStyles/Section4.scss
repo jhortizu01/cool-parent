@@ -1,0 +1,35 @@
+.section4 {
+  height: 410px;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 600px;
+  margin-top: 100px;
+  text-align: end;
+  margin-bottom: 30px;
+}
+
+.app-title {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+.footer-icons {
+  margin-top: 35px;
+}
+
+.rights-reserved {
+  margin-top: 35px;
+}

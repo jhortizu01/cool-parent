@@ -1,0 +1,20 @@
+.sec2top {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.features {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 64px;
+}

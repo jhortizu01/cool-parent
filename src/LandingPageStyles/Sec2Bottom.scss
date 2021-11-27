@@ -1,0 +1,30 @@
+hr.solid {
+  border-top: 3px solid black;
+  width: 500px;
+}
+
+.sec-2-title {
+  margin-top: 75px;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+
+}
+
+.sec-2-description {
+  font-family: 'Actor', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sec-2-bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.sec2bottom {
+  padding-bottom: 120px;
+  background-color: #FFFFFF;
+}

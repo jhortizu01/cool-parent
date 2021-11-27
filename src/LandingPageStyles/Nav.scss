@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Gilroy-Light ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Light ☞'), url('../fonts/Gilroy-Light.woff') format('woff');
+}
+  
+
+.landing-nav {
+  height: 116px;
+  width: 100%;
+  background-color: #FAFAFA;
+  font-family: 'Homemade Apple', cursive;
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  justify-content: space-between;
+}
+
+.nav-title {
+  font-size: 18px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin: 0px;
+  margin-left: 50px;
+}
+
+.nav-links {
+  font-family: 'Gilroy Light';
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: space-between;
+  width: 525px;
+}
+
+.menu {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border: solid #71CEAC 3px;
+  border-radius: 15px;
+  color: #71CEAC;
+  margin-right: 50px;
+}
+
+.menu:hover {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border: solid #E56399 3px;
+  border-radius: 15px;
+  color: #E56399;
+  margin-right: 50px;
+  cursor: pointer;
+}
