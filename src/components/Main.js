@@ -6,6 +6,7 @@ import MyFriendsContainer from './MyFriendsContainer'
 import { Route } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import NavBar from './NavBar'
+import Nav from '../LandingPageComponents/Nav'
 import LandingPage from '../LandingPageComponents/LandingPageContainer'
 
 const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
@@ -16,19 +17,19 @@ const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
       <Route exact path='/' render={() => <LandingPage />} />
       <Route exact path='/profiles' render={() => 
         <> 
-          <NavBar />
+          <Nav />
           <AllProfilesContainer allParents={allParents} setParentState={setParentState} allFriendsState={allFriendsState} setAllFriends={setAllFriends} /> 
         </>}
       /> 
       <Route exact path='/events' render={() => 
         <>
-          <NavBar />
+          <Nav />
           <EventContainer allEvents={allEvents} setEventState={setEventState}/>
         </>}
        />
       <Route exact path='/my-friends' render={() => 
         <>
-          <NavBar />
+          <Nav />
           <MyFriendsContainer allFriendsState={allFriendsState} allParents={allParents} setParentState={setParentState} setAllFriends={setAllFriends}  />
         </>
       } />
