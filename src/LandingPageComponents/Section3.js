@@ -1,5 +1,6 @@
 import React from 'react'
 import '../LandingPageStyles/Section3.scss'
+import { Link } from 'react-router-dom'
 
 const Section3 = () => {
   return (
@@ -8,8 +9,10 @@ const Section3 = () => {
         <p className="tag-1"><b>Ready to get started?</b></p>
         <p className="tag-2">Sign up and meet friends now!</p>
       </section>
-        <button className="find-friends-btn">FIND FRIENDS</button>
-        <button className="works-btn">HOW IT WORKS</button>
+      <Link to='/profiles'>
+        <button className="find-friends-btn-footer">FIND FRIENDS</button>
+      </Link>
+      <button className="works-btn">HOW IT WORKS</button>
     </div>
   )
 }

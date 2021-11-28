@@ -1,0 +1,42 @@
+.creator {
+  display: flex;
+  flex-direction: row;
+}
+
+.creator-img {
+  margin-top: 40px;
+  width: 300px;
+  height: auto;
+}
+
+.creator-details {
+  width: 650px;
+  margin-left: 25px;
+}
+
+.about-me-title {
+  font-family: 'Homemade Apple', cursive;
+}
+
+.source-code {
+  display: flex;
+  flex-direction: row;
+}
+
+.cool-parent {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Homemade Apple', cursive;
+}
+
+.src {
+  margin-top: 7px;
+}
+
+#src {
+  cursor: pointer;
+}
+
+.creator-icons {
+  height: 35px;
+}

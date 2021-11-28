@@ -5,9 +5,9 @@ import EventContainer from './EventContainer'
 import MyFriendsContainer from './MyFriendsContainer'
 import { Route } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import NavBar from './NavBar'
 import Nav from '../LandingPageComponents/Nav'
 import LandingPage from '../LandingPageComponents/LandingPageContainer'
+import Creator from '../LandingPageComponents/Creator'
 
 const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
   const [allFriendsState, setAllFriends] = useState([])
@@ -33,6 +33,12 @@ const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
           <MyFriendsContainer allFriendsState={allFriendsState} allParents={allParents} setParentState={setParentState} setAllFriends={setAllFriends}  />
         </>
       } />
+      <Route exact path='/meet-the-creator' render={() => 
+        <> 
+          <Nav />
+          <Creator /> 
+        </>}
+      /> 
     </div>
   )
 }
