@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: row;
   height: max-content;
-  background-color: white;
+  width: 93%;
+  background-color: #FAFAFA;
   @include event-container550();
 }
 
@@ -18,7 +19,7 @@
 
 .event-card-container {
   width: 75%;
-  height: 475px;
+  height: 600px;
   overflow-y: scroll;
   overflow-x: hidden;
 }

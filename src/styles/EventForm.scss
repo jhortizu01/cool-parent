@@ -17,12 +17,12 @@ form {
   @include form550(); 
 }
 
-input {
+.input-events {
   width: 90%;
   height: 35px;
   margin: 5px;
   border-radius: $rounded-corners;
-  border: none;
+  border: $green solid 2px;
   padding-left: 15px;
 }
 
