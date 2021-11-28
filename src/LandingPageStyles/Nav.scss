@@ -55,3 +55,28 @@
   margin-right: 50px;
   cursor: pointer;
 }
+
+.items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menu-btn {
+  width: 175px;
+  height: 40px;
+  margin-left: 13px;
+  border: none;
+  background: #71CEAC;
+  color: white;
+}
+
+.menu-btn:hover {
+  width: 175px;
+  height: 40px;
+  margin-left: 13px;
+  border: none;
+  background: #71CEAC;
+  cursor: pointer;
+}
