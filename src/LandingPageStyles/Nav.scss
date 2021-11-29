@@ -11,6 +11,10 @@
   @include flex-row();
 }
 
+@media screen and (max-width: 1170px) {
+  
+}
+
 .nav-title {
   font-size: 18px;
   display: flex;

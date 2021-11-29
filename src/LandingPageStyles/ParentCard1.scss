@@ -1,18 +1,17 @@
+@import 'mixins';
+@import 'variables';
+
 .parent1card {
-  height: 270px;
-  width: 270px;
   margin-right: 25px;
+  @include square(270px);
 }
 
-// div
 .mom1 {
-  height: 270px;
-  width: 270px;
   overflow: hidden;
   margin: 0px;
+  @include square(270px);
 }
 
-//img
 .parent1 {
   margin-left: -590px;
 }
@@ -21,7 +20,7 @@
   width: 268px;
   height: 166px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border: white solid 1px;
+  border: $hidden-border;
 }
 
 .name1 {

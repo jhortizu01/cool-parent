@@ -1,20 +1,20 @@
+@import 'variables';
+@import 'mixins';
+
 .sec2top {
   height: 650px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: $secondary-background;
+  @include flex-column();
 }
 
 .feature-container {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-
+  @include flex-row();
 }
 
 .features {
-  font-family: 'Abril Fatface', cursive;
+  font-family: $font3;
   font-size: 64px;
 }

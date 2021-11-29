@@ -1,0 +1,5 @@
+@mixin profile-img350 {
+  @media screen and (max-width: 1175px) {
+    @include square(200px);
+  }
+}

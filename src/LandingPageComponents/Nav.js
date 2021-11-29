@@ -21,6 +21,9 @@ const Nav = () => {
       <Link to='/events'>
         <button className="menu-btn animate__animated animate__fadeInDown">Events</button>
       </Link>
+      <Link to='/my-friends'>
+        <button className="menu-btn animate__animated animate__fadeInDown">My Friends</button>
+      </Link>
   
       <button className="menu-btn animate__animated animate__fadeInDown">How It Works</button>
 

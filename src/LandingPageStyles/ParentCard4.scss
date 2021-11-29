@@ -2,33 +2,30 @@
 @import 'variables';
 
 .parentcard4 {
-  height: 270px;
-  width: 270px;
+  @include square(270px);
 }
 
 .dad2 {
-  height: 270px;
-  width: 270px;
   overflow: hidden;
   margin: 0px;
+  @include square(270px);
 }
 
 .parent-4-img {
-  height: 270px;
-  width: 270px;
   margin: 0px;
+  @include square(270px);
 }
 
 .dad2-description-container {  
   width: 268px;
   height: 166px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border: white solid 1px;
+  border: $hidden-border;
 }
 
 .name4 {
   margin: 0px;
- margin-top: 25px;
+  margin-top: 25px;
 }
 
 .word-container-4 {

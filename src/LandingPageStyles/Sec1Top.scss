@@ -1,8 +1,11 @@
+@import 'variables';
+@import 'mixins';
+
 .landingsec1top {
   height: 700px;
-  display: flex;
-  flex-direction: row;
-  background-color: #F1F1F2;
+  width: 100%;
+  background-color: $landing-top;
+  @include flex-row();
 }
 
 .momdaughter {
@@ -13,10 +16,9 @@
 .description-container {
   width: 50%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin-top: 7%;
+  @include flex-column();
 }
 
 .description {
@@ -25,7 +27,7 @@
 }
 
 .tagline {
-  font-family: 'Abril Fatface', cursive;
+  font-family: $font3;
   font-size: 56px;
   margin: 0px;
   margin-bottom: 60px;
@@ -33,29 +35,29 @@
 
 .tagline2 {
   font-size: 20px;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: $font4;
   margin-bottom: 60px;
 }
 
 .friends-btn {
-  background-color: #71CEAC;
+  background-color: $accent-color1;
   color: white;
   border: none;
   border-radius: 15px;
   width: 250px;
   height: 60px;
   font-size: 18px;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: $font4;
 }
 
 .friends-btn:hover {
-  background-color: #E56399;
+  background-color: $accent-color2;
   color: white;
   border: none;
   border-radius: 15px;
   width: 250px;
   height: 60px;
   font-size: 18px;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: $font4;
   cursor: pointer;
 }
