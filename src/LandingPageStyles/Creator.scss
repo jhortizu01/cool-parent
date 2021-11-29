@@ -1,6 +1,8 @@
+@import 'mixins';
+@import 'variables';
+
 .creator {
-  display: flex;
-  flex-direction: row;
+  @include flex-row();
 }
 
 .creator-img {
@@ -15,18 +17,17 @@
 }
 
 .about-me-title {
-  font-family: 'Homemade Apple', cursive;
+  font-family:  $main-font;
 }
 
 .source-code {
-  display: flex;
-  flex-direction: row;
+  @include flex-row();
 }
 
 .cool-parent {
   margin-left: 10px;
   margin-right: 10px;
-  font-family: 'Homemade Apple', cursive;
+  font-family: $main-font;
 }
 
 .src {

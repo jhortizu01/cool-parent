@@ -1,9 +1,10 @@
+@import 'mixins';
+
 .feature2 {
   width: 350px;
-  display: flex;
-  flex-direction: column;
   justify-self: center;
   align-items: center;
   margin-right: 20px;
   margin-left: 20px;
+  @include flex-column();
 }

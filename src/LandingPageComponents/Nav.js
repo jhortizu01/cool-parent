@@ -13,21 +13,20 @@ const Nav = () => {
   const menuItems = menuOpen ?
     <div className="items">
       <Link to='/'>
-        <button className="menu-btn animate__animated animate__fadeInDown animate__faster">Home</button>
+        <button className="menu-btn animate__animated animate__fadeInDown">Home</button>
       </Link>  
       <Link to='/profiles'>
-        <button className="menu-btn animate__animated animate__fadeInDown animate__faster">Profiles</button> 
+        <button className="menu-btn animate__animated animate__fadeInDown">Profiles</button> 
       </Link>
       <Link to='/events'>
-        <button className="menu-btn animate__animated animate__fadeInDown animate__faster">Events</button>
+        <button className="menu-btn animate__animated animate__fadeInDown">Events</button>
       </Link>
-      <Link to='/my-friends'>
-        <button className="menu-btn animate__animated animate__fadeInDown animate__faster">Friends</button>
+  
+      <button className="menu-btn animate__animated animate__fadeInDown">How It Works</button>
+
+      <Link to='/meet-the-creator'>
+        <button className="menu-btn animate__animated animate__fadeInDown">Meet the Creator</button>
       </Link>
-    {/* how it works needs to be fixed */}
-      <button className="menu-btn animate__animated animate__fadeInDown animate__faster">How It Works</button>
-    {/* need to make meet the cretor  */}
-      <button className="menu-btn animate__animated animate__fadeInDown animate__faster">Meet the Creator</button>
     </div>
     : null
 

@@ -1,20 +1,14 @@
-@font-face {
-  font-family: 'Gilroy-Light ☞';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Gilroy-Light ☞'), url('../fonts/Gilroy-Light.woff') format('woff');
-}
-  
+@import 'mixins';
+@import 'variables';
 
 .landing-nav {
   height: 116px;
   width: 100%;
-  background-color: #FAFAFA;
-  font-family: 'Homemade Apple', cursive;
-  display: flex;
-  flex-direction: row;
+  background-color: $main-background;
+  font-family: $main-font;
   align-items: first baseline;
   justify-content: space-between;
+  @include flex-row();
 }
 
 .nav-title {
@@ -27,7 +21,7 @@
 }
 
 .nav-links {
-  font-family: 'Gilroy Light';
+  font-family: $content-font;
   display: flex;
   flex-direction: row;
   font-size: 18px;
@@ -38,29 +32,27 @@
 .menu {
   width: 200px;
   height: 50px;
-  background-color: white;
-  border: solid #71CEAC 3px;
+  background-color: $secondary-background;
+  border: $main-border;
   border-radius: 15px;
-  color: #71CEAC;
+  color: $accent-color1;
   margin-right: 50px;
 }
 
 .menu:hover {
   width: 200px;
   height: 50px;
-  background-color: white;
-  border: solid #E56399 3px;
+  background-color: $secondary-background;
+  border: $secondary-background;
   border-radius: 15px;
-  color: #E56399;
+  color: $accent-color2;
   margin-right: 50px;
   cursor: pointer;
 }
 
 .items {
   position: relative;
-  display: flex;
-  flex-direction: column;
-
+  @include flex-column();
 }
 
 .menu-btn {
@@ -68,8 +60,8 @@
   height: 40px;
   margin-left: 13px;
   border: none;
-  background: #71CEAC;
-  color: white;
+  background: $accent-color1;
+  color: $secondary-background;
 }
 
 .menu-btn:hover {
@@ -77,6 +69,6 @@
   height: 40px;
   margin-left: 13px;
   border: none;
-  background: #71CEAC;
+  background: $accent-color1;  
   cursor: pointer;
 }

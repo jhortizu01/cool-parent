@@ -14,7 +14,9 @@ const Section4 = () => {
           <p className="links">Events</p>
         </Link>
         <p className="app-title">Cool Parent</p>
-        <p className="links">Creator</p>
+        <Link to='/meet-the-creator' style={{ textDecoration: 'none' }}>
+          <p className="links">Creator</p>
+        </Link>
         <p className="links">About</p>
       </section>
       <hr class="solid"></hr>
