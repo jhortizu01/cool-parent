@@ -3,7 +3,6 @@
 # Cool Parents 😎🤦🏾‍♀️
 Mod 3 Final Project
 
-
 ## Table of Contents
   - [Abstract](#abstract)
   - [Technologies](#technologies)
@@ -66,6 +65,10 @@ To run cypress
 ## Wins
 - Successfully creating a React app with a few different moving parts
 - Made more interesting profile cards rather than displaying all of the info on the page.
+
+## Challenges + Improvements
+- Colors will need to be changed in order for it to be more accessible to all users.
+- Getting the likes on the profile cards on the home page to persist on page change was tricky, however it was solved with a conditional statment that rendered friended cards OR regular cards.
 
 ## Project Specs
   - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/showcase.html)
