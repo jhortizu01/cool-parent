@@ -1,0 +1,43 @@
+@import 'mixins';
+@import 'variables';
+
+.creator {
+  @include flex-row();
+}
+
+.creator-img {
+  margin-top: 40px;
+  width: 300px;
+  height: auto;
+}
+
+.creator-details {
+  width: 650px;
+  margin-left: 25px;
+}
+
+.about-me-title {
+  font-family:  $main-font;
+}
+
+.source-code {
+  @include flex-row();
+}
+
+.cool-parent {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: $main-font;
+}
+
+.src {
+  margin-top: 7px;
+}
+
+#src {
+  cursor: pointer;
+}
+
+.creator-icons {
+  height: 35px;
+}

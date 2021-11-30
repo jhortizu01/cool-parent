@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+hr.solid {
+  border-top: 3px solid black;
+  width: 500px;
+}
+
+.sec-2-title {
+  margin-top: 75px;
+  font-size: 45px;
+  text-align: center;
+  font-family: $font4;
+
+}
+
+.sec-2-description {
+  font-family: $content-font;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sec-2-bottom-container {
+  justify-content: center;
+  margin-top: 60px;
+  @include flex-row();
+}
+
+.sec2bottom {
+  padding-bottom: 120px;
+  background-color: $secondary-background;
+}

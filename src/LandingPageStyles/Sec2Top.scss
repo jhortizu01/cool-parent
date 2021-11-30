@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+
+.sec2top {
+  height: 650px;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary-background;
+  @include flex-column();
+}
+
+.feature-container {
+  justify-content: space-between;
+  @include flex-row();
+}
+
+.features {
+  font-family: $font3;
+  font-size: 64px;
+}

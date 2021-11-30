@@ -4,20 +4,22 @@
 @import 'mediaquery350';
 
 .profile-card {
-  background-color: $main-title;
-  border-radius: $rounded-corners;
-  border: $green-border;
-  width: min-content;
+  background-color: white;
+  border-radius: 10px;
+  border: white;
+  width: max-content;
   height: auto;
-  margin-top: 40px;
+  margin-top: 0px;
+  margin-bottom: 25px; 
   @include flex-align-center();
   @include profile-card640();
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .profile-img {
-  border-radius: 50%;
-  border: $pink-border;
-  margin-left: 15px;
+  border: $green-border;
+  width: 100%;
+  border-bottom-right-radius: 150px;
   @include square(250px);
   @include profile-img640();
   @include profile-img350();
@@ -34,29 +36,24 @@
 }
 
 .card-imgs {
+  height: 100%;
   @include flex-align-center-column();
-  margin: 25px;
   @include card-imgs640();
 }
 
-.description {
-  margin-left: 30px;
-  margin-right: 15px;
-  margin-top: 15px;
-  width: 250px;
-  @include description640();
-}
 
 .name {
   font-family: $secondary-font;
-  font-size: 45px;
+  font-size: 25px;
   margin: 0px;
   margin-bottom: 15px;
+  @include name640();
 }
 
 p {
   font-family: $primary-font;
   margin-top: 0px;
+  margin-bottom: 4px;
 }
 
 .open {
@@ -77,6 +74,13 @@ p {
 .hide-button-style {
   display: flex;
   justify-content: flex-end;
+}
+
+.profile-description {
+  width: 450px;
+  margin-left: 30px;
+  margin-right: 30px;
+  @include description640();
 }
 
 

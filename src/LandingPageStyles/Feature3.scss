@@ -1,0 +1,16 @@
+@import 'mixins';
+
+.feature3 {
+  width: 350px;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  @include flex-column;
+}
+
+.events {
+  height: 100px;
+  width: auto;
+}

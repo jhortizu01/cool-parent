@@ -86,6 +86,7 @@ const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
     <form>
       <label>Add your event!</label>
         <input
+          className="input-events"
           type='text'
           placeholder='Host Name'
           name='hostName'
@@ -93,6 +94,7 @@ const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
           onChange={e => handleHostChange(e)}
         />
         <input
+          className="input-events"
           type='text'
           placeholder='What is the occasion?'
           name='what'
@@ -100,6 +102,7 @@ const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
           onChange={e => handleWhatChange(e)}
         />
         <input
+          className="input-events"
           type='text'
           placeholder='Where?'
           name='where'
@@ -107,6 +110,7 @@ const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
           onChange={e => handleWhereChange(e)}
         />
         <input
+          className="input-events"
           type='text'
           placeholder='When?'
           name='when'
@@ -115,6 +119,7 @@ const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
 
         />
         <input
+          className="input-events"
           type='text'
           placeholder='Time?'
           name='time'
@@ -122,6 +127,7 @@ const EventForm = ({ allEvents, setEventState, setMissingFields }) => {
           onChange={e => handleTimeChange(e)}
         />
         <input
+          className="input-events"
           type='text'
           placeholder='Description of Event'
           name='description'

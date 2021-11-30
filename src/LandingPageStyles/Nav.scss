@@ -1,0 +1,78 @@
+@import 'mixins';
+@import 'variables';
+
+.landing-nav {
+  height: 116px;
+  width: 100%;
+  background-color: $main-background;
+  font-family: $main-font;
+  align-items: first baseline;
+  justify-content: space-between;
+  @include flex-row();
+}
+
+@media screen and (max-width: 1170px) {
+  
+}
+
+.nav-title {
+  font-size: 18px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin: 0px;
+  margin-left: 50px;
+}
+
+.nav-links {
+  font-family: $content-font;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: space-between;
+  width: 525px;
+}
+
+.menu {
+  width: 200px;
+  height: 50px;
+  background-color: $secondary-background;
+  border: $main-border;
+  border-radius: 15px;
+  color: $accent-color1;
+  margin-right: 50px;
+}
+
+.menu:hover {
+  width: 200px;
+  height: 50px;
+  background-color: $secondary-background;
+  border: $secondary-background;
+  border-radius: 15px;
+  color: $accent-color2;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.items {
+  position: relative;
+  @include flex-column();
+}
+
+.menu-btn {
+  width: 175px;
+  height: 40px;
+  margin-left: 13px;
+  border: none;
+  background: $accent-color1;
+  color: $secondary-background;
+}
+
+.menu-btn:hover {
+  width: 175px;
+  height: 40px;
+  margin-left: 13px;
+  border: none;
+  background: $accent-color1;  
+  cursor: pointer;
+}

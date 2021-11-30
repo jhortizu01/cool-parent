@@ -1,0 +1,35 @@
+@import 'mixins';
+@import 'variables';
+
+.parent1card {
+  margin-right: 25px;
+  @include square(270px);
+}
+
+.mom1 {
+  overflow: hidden;
+  margin: 0px;
+  @include square(270px);
+}
+
+.parent1 {
+  margin-left: -590px;
+}
+
+.mom1-description-container {  
+  width: 268px;
+  height: 166px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: $hidden-border;
+}
+
+.name1 {
+  margin: 0px;
+  margin-top: 25px;
+}
+
+.word-container-1 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+

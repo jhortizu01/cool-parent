@@ -1,0 +1,61 @@
+@import 'mixins';
+@import 'variables';
+
+.landingsec1bottom {
+  height: 600px;
+  background-color: #F1F1F2;
+  font-family: 'Actor', sans-serif;
+  font-size: 14px;
+  @include square(100%);
+  @include flex-row();
+}
+
+.styling {
+  width: 441px;
+  height: 331px;
+  justify-content: center;
+  @include flex-column();
+}
+.dadsbaby {
+  width: 50%;
+  height: 100%;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 23px;
+}
+
+.learn-more {
+  width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  border: #71CEAC 3px solid;
+  font-size: 18px;
+  color:#71CEAC;
+  margin-top: 35px;
+}
+
+.learn-more:hover {
+  width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  border: #E56399  3px solid;
+  font-size: 18px;
+  color:#E56399 ;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.description-bottom {
+  width: 50%;
+  height: 100%;
+  margin-top: 5%;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}

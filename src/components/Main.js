@@ -5,15 +5,40 @@ import EventContainer from './EventContainer'
 import MyFriendsContainer from './MyFriendsContainer'
 import { Route } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import Nav from '../LandingPageComponents/Nav'
+import LandingPage from '../LandingPageComponents/LandingPageContainer'
+import Creator from '../LandingPageComponents/Creator'
 
 const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
   const [allFriendsState, setAllFriends] = useState([])
 
   return (
     <div className="main">
-      <Route exact path='/' render={() => <AllProfilesContainer allParents={allParents} setParentState={setParentState} allFriendsState={allFriendsState} setAllFriends={setAllFriends} />} /> 
-      <Route exact path='/events' render={() => <EventContainer allEvents={allEvents} setEventState={setEventState}/>} />
-      <Route exact path='/my-friends' render={() => <MyFriendsContainer allFriendsState={allFriendsState} allParents={allParents} setParentState={setParentState} setAllFriends={setAllFriends}  />} />
+      <Route exact path='/' render={() => <LandingPage />} />
+      <Route exact path='/profiles' render={() => 
+        <> 
+          <Nav />
+          <AllProfilesContainer allParents={allParents} setParentState={setParentState} allFriendsState={allFriendsState} setAllFriends={setAllFriends} /> 
+        </>}
+      /> 
+      <Route exact path='/events' render={() => 
+        <>
+          <Nav />
+          <EventContainer allEvents={allEvents} setEventState={setEventState}/>
+        </>}
+       />
+      <Route exact path='/my-friends' render={() => 
+        <>
+          <Nav />
+          <MyFriendsContainer allFriendsState={allFriendsState} allParents={allParents} setParentState={setParentState} setAllFriends={setAllFriends}  />
+        </>
+      } />
+      <Route exact path='/meet-the-creator' render={() => 
+        <> 
+          <Nav />
+          <Creator /> 
+        </>}
+      /> 
     </div>
   )
 }

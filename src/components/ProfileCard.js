@@ -46,16 +46,18 @@ const ProfileCard = ({ name, age, id, occupation, activityKids, activityNoKids, 
     <input type="image" id={id} onClick={e => toggleFriends(e)} className='fistbump'  src={notFriends} alt='two fists before fist bump' />
 
   const details = showInfo ?       
-    <section className="description">
-      <h1 className="name">{name}</h1>
-      <p>Age: {age}</p>
-      <p>Occupation: {occupation}</p>
-      <p>Favorite Kid Activities: {activityKids}</p>
-      <p>Favorite No Kid Activities: {activityNoKids}</p>
-      <p>About Me: {aboutMe}</p>
-      <div className="hide-button-style">
-        {changeCloseArrow}
-      </div>
+    <section className="profile-description">
+        <h1 className="name">{name}</h1>
+        <p className="info">Age: {age}</p>
+        <p className="info">Occupation: {occupation}</p>
+        <p className="info">Favorite Kid Activities: {activityKids}</p>
+        <p className="info">Favorite No Kid Activities: {activityNoKids}</p>
+        <p className="info">About Me: {aboutMe}</p>
+        <div className="hide-button-style">
+          {changeCloseArrow}
+        </div>
+
+      
     </section> :
     null
 

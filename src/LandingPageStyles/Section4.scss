@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'mixins';
+
+.section4 {
+  height: 410px;
+  background-color: $main-background;
+  align-items: center;
+  @include flex-column();
+}
+
+.footer-links {
+  justify-content: space-between;
+  width: 600px;
+  margin-top: 100px;
+  text-align: end;
+  margin-bottom: 30px;
+  @include flex-row();
+}
+
+.app-title {
+  font-family: $main-font;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.links {
+  margin-top: 15px;
+  color: black;
+}
+
+.footer-icons {
+  margin-top: 35px;
+}
+
+.rights-reserved {
+  margin-top: 35px;
+}

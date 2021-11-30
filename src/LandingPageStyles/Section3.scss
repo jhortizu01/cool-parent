@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+
+.section3 {
+  font-family: $content-font;
+  height: 240px;
+  background-color: $accent-color1;
+  align-items: center;
+  justify-content: center;
+  @include flex-row();
+}
+
+.tag-1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.tag-2 {
+  font-size: 32px;
+}
+
+.bottom-tag {
+  margin-right: 250px;
+}
+.find-friends-btn-footer {
+  width: 200px;
+  height: 38px;
+  background-color: black;
+  border-radius: 12px;
+  margin-right: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.works-btn {
+  width: 200px;
+  height: 38px;
+  background-color: $accent-color1;
+  border: black solid 2px;
+  border-radius: 12px;
+}

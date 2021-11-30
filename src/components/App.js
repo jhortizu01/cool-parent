@@ -4,6 +4,8 @@ import Main from './Main'
 import NavBar from './NavBar'
 import { fetchParentData, fetchEventData } from './apiCalls'
 import Error from './Error'
+import LandingPageContainer from '../LandingPageComponents/LandingPageContainer'
+
 
 function App() {
   const [allParents, setParentState] = useState([])
@@ -31,7 +33,6 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
       {errorHandling}
     </div>
   );
