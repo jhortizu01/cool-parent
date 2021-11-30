@@ -24,9 +24,9 @@ const Nav = () => {
       <Link to='/my-friends'>
         <button className="menu-btn animate__animated animate__fadeInDown">My Friends</button>
       </Link>
-  
-      <button className="menu-btn animate__animated animate__fadeInDown">How It Works</button>
-
+      <a href="https://github.com/jhortizu01/cool-parent">
+        <button className="menu-btn animate__animated animate__fadeInDown">Source Code</button>
+      </a>
       <Link to='/meet-the-creator'>
         <button className="menu-btn animate__animated animate__fadeInDown">Meet the Creator</button>
       </Link>

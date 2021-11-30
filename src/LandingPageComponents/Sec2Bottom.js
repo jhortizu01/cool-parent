@@ -13,10 +13,10 @@ const Sec2Bottom = () => {
         <p className="sec-2-description">“I’ve finally found people I can connect with!”</p>
       </div>
       <section className="sec-2-bottom-container">
-          <ParentCard1 />
-          <ParentCard2 />
-          <ParentCard3 />
-          <ParentCard4 />
+        <ParentCard1 />
+        <ParentCard2 />
+        <ParentCard3 />
+        <ParentCard4 />
       </section>
     </div>
   )

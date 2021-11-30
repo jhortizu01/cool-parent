@@ -12,7 +12,9 @@ const Section3 = () => {
       <Link to='/profiles'>
         <button className="find-friends-btn-footer">FIND FRIENDS</button>
       </Link>
-      <button className="works-btn">HOW IT WORKS</button>
+      <a href="https://github.com/jhortizu01/cool-parent">
+        <button className="works-btn">Source Code</button>
+      </a>
     </div>
   )
 }
