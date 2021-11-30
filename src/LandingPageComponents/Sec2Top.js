@@ -9,7 +9,6 @@ const Sec2Top = () => {
   return (
     <div className="sec2top">
       <h2 className="features">Discover Key Features</h2>
- 
       <section className="feature-container">
           <Feature1 />
           <Feature2 />

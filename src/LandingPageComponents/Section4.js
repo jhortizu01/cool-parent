@@ -17,7 +17,9 @@ const Section4 = () => {
         <Link to='/meet-the-creator' style={{ textDecoration: 'none' }}>
           <p className="links">Creator</p>
         </Link>
-        <p className="links">About</p>
+        <a href="https://www.w3schools.com">
+          <p className="links">Source Code</p>
+        </a>
       </section>
       <hr class="solid"></hr>
       <img src={social} alt="social media icons" className="footer-icons" />
