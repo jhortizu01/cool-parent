@@ -60,6 +60,28 @@ describe('landing page flows', () => {
       .contains('Veronica Campbell')
   })
 
+  it.skip('Should remove friend card from friends container when fist bump is clicked', () => {
+    cy.get('.menu')
+      .click()
+      .get('[href="/profiles"] > .menu-btn')
+      .click()
+      .get(':nth-child(1) > .card-imgs')
+      .get('#2.fistbump')
+      .click()
+      .get('.menu')
+      .click()
+      .get('[href="/my-friends"] > .menu-btn')
+      .click()
+      .get('.name')
+      .contains('Veronica Campbell')
+      .get('#2.fistbump')
+      .click()
+      .get('.friend-container')
+      .children()
+      .should('have.length', 1)
+      .contains('You dont have any friends yet. Go make some friends!')
+  })
+
   it.skip('has message if you have no friends', () => {
     cy.get('.menu')
       .click()

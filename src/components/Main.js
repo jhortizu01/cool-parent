@@ -8,31 +8,42 @@ import PropTypes from 'prop-types'
 import Nav from '../LandingPageComponents/Nav'
 import LandingPage from '../LandingPageComponents/LandingPageContainer'
 import Creator from '../LandingPageComponents/Creator'
+import Error from './Error'
 
-const Main = ({ allParents, allEvents, setParentState, setEventState}) => {
+const Main = ({ allParents, allEvents, setParentState, setEventState, errorState, setErrorState}) => {
   const [allFriendsState, setAllFriends] = useState([])
+
+  let profilesError = errorState ? <Error /> :
+  <Route exact path='/profiles' render={() => 
+      <> 
+        <Nav />
+        <AllProfilesContainer allParents={allParents} setParentState={setParentState} allFriendsState={allFriendsState} setAllFriends={setAllFriends} /> 
+      </>}
+    /> 
+
+  let eventsError = errorState ? <Error /> :  
+  <Route exact path='/events' render={() => 
+    <>
+      <Nav />
+      <EventContainer allEvents={allEvents} setEventState={setEventState}/>
+    </>}
+   />
+
+   let friendsError = errorState ? <Error /> :
+   <Route exact path='/my-friends' render={() => 
+    <>
+      <Nav />
+      <MyFriendsContainer allFriendsState={allFriendsState} allParents={allParents} setParentState={setParentState} setAllFriends={setAllFriends}  />
+    </>
+  } />
+
 
   return (
     <div className="main">
       <Route exact path='/' render={() => <LandingPage />} />
-      <Route exact path='/profiles' render={() => 
-        <> 
-          <Nav />
-          <AllProfilesContainer allParents={allParents} setParentState={setParentState} allFriendsState={allFriendsState} setAllFriends={setAllFriends} /> 
-        </>}
-      /> 
-      <Route exact path='/events' render={() => 
-        <>
-          <Nav />
-          <EventContainer allEvents={allEvents} setEventState={setEventState}/>
-        </>}
-       />
-      <Route exact path='/my-friends' render={() => 
-        <>
-          <Nav />
-          <MyFriendsContainer allFriendsState={allFriendsState} allParents={allParents} setParentState={setParentState} setAllFriends={setAllFriends}  />
-        </>
-      } />
+      {profilesError}
+      {eventsError}
+      {friendsError}
       <Route exact path='/meet-the-creator' render={() => 
         <> 
           <Nav />

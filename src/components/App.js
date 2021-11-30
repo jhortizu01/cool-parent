@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      {errorHandling}
+        <Main allParents={allParents} allEvents={allEvents} setParentState={setParentState} setEventState={setEventState} errorState={errorState} setErrorState={setErrorState}/>
     </div>
   );
 }
